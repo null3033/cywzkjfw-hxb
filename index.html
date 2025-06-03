@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>公告--怀念</title>
+    <meta name="theme-color" content="#6a5acd">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <!-- 密码输入界面 -->
+        <div class="password-screen" id="passwordScreen">
+            <h1>欢迎来到公告</h1>
+            <div class="password-form">
+                <input type="text" id="usernameInput" placeholder="输入账号" autocomplete="username">
+                <input type="password" id="passwordInput" placeholder="输入密码" autocomplete="current-password">
+                <div class="version-info">共享用户账号：共享用户；密码：123456</div>
+                <button id="enterButton">进入</button>
+            </div>
+            <div class="error-message" id="errorMessage">密码错误，请重试</div>
+            <div class="mobile-tip">提示：在手机上可以添加到主屏幕</div>
+            <div class="version-info">版本 1.0.0 | © 2025 </div>
+        </div>
+        
+        <!-- 内容界面 -->
+        <div class="content-screen" id="contentScreen">
+            <div class="header">
+                <h1 id="contentTitle">公告--怀念</h1>
+                <div id="userWelcome" class="user-welcome"></div>
+            </div>
+            <div class="memory-container" id="memoryContainer">
+                <!-- 公告内容将通过JavaScript动态加载 -->
+            </div>
+            <button id="lockButton" class="lock-button">🔒 锁定</button>
+            <div class="version-info">版本 1.0.0 | © 2025</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

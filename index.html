@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常用网站 - 快捷访问</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 免责声明弹窗 -->
+    <div id="disclaimerModal" class="disclaimer-modal">
+        <div class="disclaimer-content">
+            <div class="disclaimer-title">免责声明</div>
+            <div class="disclaimer-text">
+                本网站所提供的信息仅供参考。我们尽力确保内容的准确性，但不保证所有信息完全无误。用户因依赖本网站信息而采取的任何行动，风险自负。本网站不对由此产生的任何直接或间接损失承担责任。
+                <div class="version-info">
+                    <span class="version-number"></span>
+                    <span class="version-date"></span>
+                    <span class="version-author"></span>
+                </div>
+            </div>
+            <div class="disclaimer-buttons">
+                <button class="disclaimer-btn agree-btn" id="agreeBtn">同意</button>
+                <button class="disclaimer-btn disagree-btn" id="disagreeBtn">不同意</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 退出提示 -->
+    <div id="exitMessage" class="exit-message">
+        <h3>您不同意本网站的免责声明</h3>
+        <h3>网页已停止点击</h3>
+        <p>为保障您的权益，请立即停止使用本网站。</p>
+        <p>5秒后将自动退出...</p>
+        <div class="version-info">
+            <span class="version-number"></span>
+            <span class="version-date"></span>
+            <span class="version-author"></span>
+        </div>
+    </div>
+
+    <!-- 竖屏提示 -->
+    <div class="orientation-warning">
+        请使用系统浏览器查看、手机使用请横屏
+    </div>
+
+    <!-- 页面内容容器 -->
+    <div class="container">
+        <!-- 目录页面模块 -->
+       <div id="index" class="page">
+        <table>
+            <tr>
+                <td colspan="2" class="time-cell" id="index-time-display"></td>
+            </tr>
+            <h1>首页</h1>
+            <tr>
+                <th>分类</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>相关链接（官网）类</td>
+                <td><a href="#xiangguanlianjielei">点击查看</a></td>
+            </tr>
+            <tr>
+                <td>教育服务类</td>
+                <td><a href="#jiaoyufuwulei">点击查看</a></td>
+            </tr>
+            <tr>
+                <td>视频类</td>
+                <td><a href="#shipinlei">点击查看</a></td>
+            </tr>
+            <tr>
+                <td>免费视频、解析类</td>
+                <td><a href="#mianfeishipinjiexilei">点击查看</a></td>
+            </tr>
+            <tr>
+                <td>移动设备云服务类</td>
+                <td><a href="#yidongshebeiyunfuwulei">点击查看</a></td>
+            </tr>
+            <tr>
+                <td>实用工具类</td>
+                <td><a href="#shiyonggongjulei">点击查看</a></td>
+            </tr>
+            
+        </table>
+       
+        <!-- 免责声明 -->
+        <div class="disclaimer">
+            <p><strong>免责声明：</strong>本网站所提供的信息仅供参考。我们尽力确保内容的准确性，但不保证所有信息完全无误。用户因依赖本网站信息而采取的任何行动，风险自负。本网站不对由此产生的任何直接或间接损失承担责任。</p>
+            <div class="version-info">
+                <span class="version-number"></span>
+                <span class="version-date"></span>
+                <span class="version-author"></span>
+            </div>
+        </div>
+    </div>
+    <!-- 相关链接（官网）类页面模块 -->
+    <div id="xiangguanlianjielei" class="page">
+        <table>
+            <tr>
+                <td colspan="3" class="time-cell" id="xiangguanlianjielei-time-display"></td>
+            </tr>
+            <tr>
+                <td><a href="#index" class="back-link">返回目录</a></td>
+            </tr>
+        </table>
+        <h1>相关链接（官网）类</h1>
+        <table>
+            <tr>
+                <th>名称</th>
+                <th>链接</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>我的网站 - 首页</td>
+                <td>https://www.kjfw001.ddns-ip.net/</td>
+                <td><button onclick="window.open('https://www.kjfw001.ddns-ip.net/', '_blank')" data-cf-modified-ae80e6e574ad4027f28a4d9d-="">访问</button></td>
+            </tr>
+            <tr>
+                <td>常用网站 - 快捷访问</td>
+                <td>https://cywz.kjfw001.ddns-ip.net/</td>
+                <td><button onclick="window.open('https://cywz.kjfw001.ddns-ip.net/', '_blank')" data-cf-modified-ae80e6e574ad4027f28a4d9d-="">访问</button></td>
+            </tr>
+            <tr>
+                <td>公告--怀念</td>
+                <td>https://gghn.kjfw001.ddns-ip.net/</td>
+                <td><button onclick="window.open('https://gghn.kjfw001.ddns-ip.net/', '_blank')" data-cf-modified-ae80e6e574ad4027f28a4d9d-="">访问</button></td>
+            </tr>
+            <tr>
+                <td>节日倒计时</td>
+                <td>https://jjrdjs.kjfw001.ddns-ip.net</td>
+                <td><button onclick="window.open('https://jjrdjs.kjfw001.ddns-ip.net/', '_blank')" data-cf-modified-ae80e6e574ad4027f28a4d9d-="">访问</button></td>
+            </tr>
+            <tr>
+                <td>文字加密解密工具</td>
+                <td>https://wzjmjmgj.kjfw001.ddns-ip.net/</td>
+                <td><button onclick="window.open('https://wzjmjmgj.kjfw001.ddns-ip.net/', '_blank')" data-cf-modified-ae80e6e574ad4027f28a4d9d-="">访问</button></td>
+            </tr>
+            <tr>
+                <td>2020级2班</td>
+                <td>https://xdzx2020j2bbjwz.kjfw001.ddns-ip.net</td>
+                <td><button onclick="window.open('https://xdzx2020j2bbjwz.kjfw001.ddns-ip.net', '_blank')" data-cf-modified-ae80e6e574ad4027f28a4d9d-="">访问</button></td>
+            </tr>
+            <tr>
+                <td>我的网站 - 首页（备用）</td>
+                <td>https://wwwby1.kjfw001.ddns-ip.net/</td>
+                <td><button onclick="window.open('https://wwwby1.kjfw001.ddns-ip.net/', '_blank')" data-cf-modified-ae80e6e574ad4027f28a4d9d-="">访问</button></td>
+            </tr>
+            <tr>
+                <td>常用网站 - 快捷访问（备用）</td>
+                <td>https://cywzby1.kjfw001.ddns-ip.net/</td>
+                <td><button onclick="window.open('https://cywzby1.kjfw001.ddns-ip.net/', '_blank')" data-cf-modified-ae80e6e574ad4027f28a4d9d-="">访问</button></td>
+            </tr>
+            <tr>
+                <td>公告--怀念（备用）</td>
+                <td>https://gghnby1.kjfw001.ddns-ip.net/</td>
+                <td><button onclick="window.open('https://gghnby1.kjfw001.ddns-ip.net/', '_blank')" data-cf-modified-ae80e6e574ad4027f28a4d9d-="">访问</button></td>
+            </tr>
+            <tr>
+                <td>节日倒计时（备用）</td>
+                <td>https://jrdjsby1.kjfw001.ddns-ip.net</td>
+                <td><button onclick="window.open('https://jrdjsby1.kjfw001.ddns-ip.net/', '_blank')" data-cf-modified-ae80e6e574ad4027f28a4d9d-="">访问</button></td>
+            </tr>
+            <tr>
+                <td>文字加密解密工具（备用）</td>
+                <td>https://wzjmjmgjby1.kjfw001.ddns-ip.net/</td>
+                <td><button onclick="window.open('https://wzjmjmgjby1.kjfw001.ddns-ip.net/', '_blank')" data-cf-modified-ae80e6e574ad4027f28a4d9d-="">访问</button></td>
+            </tr>
+            <tr>
+                <td>2020级2班（备用）</td>
+                <td>https://xdzx2020j2bbjwzby1.kjfw001.ddns-ip.net</td>
+                <td><button onclick="window.open('https://xdzx2020j2bbjwzby1.kjfw001.ddns-ip.net/', '_blank')" data-cf-modified-ae80e6e574ad4027f28a4d9d-="">访问</button></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><a href="#index" class="back-link">返回目录</a></td>
+            </tr>
+        </table>
+        <!-- 免责声明 -->
+        <div class="disclaimer">
+            <p><strong>免责声明：</strong>本网站所提供的信息仅供参考。我们尽力确保内容的准确性，但不保证所有信息完全无误。用户因依赖本网站信息而采取的任何行动，风险自负。本网站不对由此产生的任何直接或间接损失承担责任。</p>
+            <div class="version-info">
+                <span class="version-number"></span>
+                <span class="version-date"></span>
+                <span class="version-author"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 教育服务类页面模块 -->
+    <div id="jiaoyufuwulei" class="page">
+        <table>
+            <tr>
+                <td colspan="2" class="time-cell" id="jiaoyufuwulei-time-display"></td>
+            </tr>
+            <tr>
+                <td><a href="#index" class="back-link">返回目录</a></td>
+            </tr>
+        </table>
+        <h1>教育服务类</h1>
+        <table>
+            <tr>
+                <th>名称</th>
+                <th>链接</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>河南省教育厅</td>
+                <td>https://jyt.henan.gov.cn/</td>
+                <td><button onclick="window.open('https://jyt.henan.gov.cn/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>河南省教育考试院</td>
+                <td>https://www.haeea.cn/</td>
+                <td><button onclick="window.open('https://www.haeea.cn/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>河南省基础教育综合信息服务平台</td>
+                <td>http://gzgl.jyt.henan.gov.cn/</td>
+                <td><button onclick="window.open('http://gzgl.jyt.henan.gov.cn/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>许昌市新中考综评</td>
+                <td>https://xcxzk.cn/</td>
+                <td><button onclick="window.open('https://xcxzk.cn/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>河南省普通高中招生信息服务平台</td>
+                <td>https://gzzs.jyt.henan.gov.cn/</td>
+                <td><button onclick="window.open('https://gzzs.jyt.henan.gov.cn/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>河南省普通高中学生综合素质评价系统</td>
+                <td>https://gzzp.jyt.henan.gov.cn/</td>
+                <td><button onclick="window.open('https://gzzp.jyt.henan.gov.cn/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>河南省普通高校招生考生服务平台</td>
+                <td>https://pzwb.haeea.cn/stu</td>
+                <td><button onclick="window.open('https://pzwb.haeea.cn/stu', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>学校安全教育平台</td>
+                <td>https://xueanquan.com/</td>
+                <td><button onclick="window.open('https://xueanquan.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>国家中小学智慧教育平台</td>
+                <td>https://basic.smartedu.cn/</td>
+                <td><button onclick="window.open('https://basic.smartedu.cn/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>教育部全国青少年普法网</td>
+                <td>https://qspfw.moe.gov.cn/index.html</td>
+                <td><button onclick="window.open('https://qspfw.moe.gov.cn/index.html', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>青骄第二课堂</td>
+                <td>https://www.2-class.com/</td>
+                <td><button onclick="window.open('https://www.2-class.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>网上共青团·智慧团建</td>
+                <td>https://zhtj.youth.cn/zhtj/</td>
+                <td><button onclick="window.open('https://zhtj.youth.cn/zhtj/', '_blank')">访问</button></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><a href="#index" class="back-link">返回目录</a></td>
+            </tr>
+        </table>
+        <!-- 免责声明 -->
+        <div class="disclaimer">
+            <p><strong>免责声明：</strong>本网站所提供的信息仅供参考。我们尽力确保内容的准确性，但不保证所有信息完全无误。用户因依赖本网站信息而采取的任何行动，风险自负。本网站不对由此产生的任何直接或间接损失承担责任。</p>
+            <div class="version-info">
+                <span class="version-number"></span>
+                <span class="version-date"></span>
+                <span class="version-author"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 视频类页面模块 -->
+    <div id="shipinlei" class="page">
+        <table>
+            <tr>
+                <td colspan="3" class="time-cell" id="shipinlei-time-display"></td>
+            </tr>
+            <tr>
+                <td><a href="#index" class="back-link">返回目录</a></td>
+            </tr>
+        </table>
+        <h1>视频类</h1>
+        <table>
+            <tr>
+                <th>名称</th>
+                <th>链接</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>抖音</td>
+                <td>https://www.douyin.com/</td>
+                <td><button onclick="window.open('https://www.douyin.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>快手</td>
+                <td>https://www.kuaishou.com/</td>
+                <td><button onclick="window.open('https://www.kuaishou.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>哔哩哔哩</td>
+                <td>https://www.bilibili.com/</td>
+                <td><button onclick="window.open('https://www.bilibili.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>爱奇艺</td>
+                <td>https://www.iqiyi.com/</td>
+                <td><button onclick="window.open('https://www.iqiyi.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>腾讯视频</td>
+                <td>https://v.qq.com/</td>
+                <td><button onclick="window.open('https://v.qq.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>优酷</td>
+                <td>https://www.youku.com/</td>
+                <td><button onclick="window.open('https://www.youku.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>芒果</td>
+                <td>https://www.mgtv.com/</td>
+                <td><button onclick="window.open('https://www.mgtv.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>搜狐视频</td>
+                <td>https://tv.sohu.com/</td>
+                <td><button onclick="window.open('https://tv.sohu.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>乐视视频</td>
+                <td>https://tv.le.com/</td>
+                <td><button onclick="window.open('https://tv.le.com/', '_blank')">访问</button></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><a href="#index" class="back-link">返回目录</a></td>
+            </tr>
+        </table>
+        <!-- 免责声明 -->
+        <div class="disclaimer">
+            <p><strong>免责声明：</strong>本网站所提供的信息仅供参考。我们尽力确保内容的准确性，但不保证所有信息完全无误。用户因依赖本网站信息而采取的任何行动，风险自负。本网站不对由此产生的任何直接或间接损失承担责任。</p>
+            <div class="version-info">
+                <span class="version-number"></span>
+                <span class="version-date"></span>
+                <span class="version-author"></span>
+            </div>
+        </div>
+    </div>
+   
+    <!-- 免费视频、解析类模块 -->
+    <div id="mianfeishipinjiexilei" class="page">
+        <table>
+            <tr>
+                <td colspan="3" class="time-cell" id="mianfeishipinjiexilei-time-display"></td>
+            </tr>
+            <tr>
+                <td><a href="#index" class="back-link">返回目录</a></td>
+            </tr>
+        </table>
+        <h1>免费视频、解析类</h1>
+        <table>
+            <tr>
+                <th>名称</th>
+                <th>链接</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>我看VIP - 视频解析</td>
+                <td>https://v.wkvip.net/</td>
+                <td><button onclick="window.open('https://v.wkvip.net/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>全民解析网-VIP视频解析（需要验证码）</td>
+                <td>http://ppip.cn/</td>
+                <td><button onclick="window.open('http://ppip.cn/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>全民解析_视频解析vip在线解析</td>
+                <td>https://pakou.cn/</td>
+                <td><button onclick="window.open('https://pakou.cn/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>夜幕解析-VIP电影解析免费看</td>
+                <td>https://yemu.xyz/shouye/</td>
+                <td><button onclick="window.open('https://yemu.xyz/shouye/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>万能命令-快捷寻找和直达你想要的各类工具</td>
+                <td>https://wannengrun.net/</td>
+                <td><button onclick="window.open('https://wannengrun.net/', '_blank')">访问</button></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><a href="#index" class="back-link">返回目录</a></td>
+            </tr>
+        </table>
+        <!-- 免责声明 -->
+        <div class="disclaimer">
+            <p><strong>免责声明：</strong>本网站所提供的信息仅供参考。我们尽力确保内容的准确性，但不保证所有信息完全无误。用户因依赖本网站信息而采取的任何行动，风险自负。本网站不对由此产生的任何直接或间接损失承担责任。</p>
+            <div class="version-info">
+                <span class="version-number"></span>
+                <span class="version-date"></span>
+                <span class="version-author"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 移动设备云服务类页面 模块 -->
+    <div id="yidongshebeiyunfuwulei" class="page">
+        <table>
+            <tr>
+                <td colspan="3" class="time-cell" id="yidongshebeiyunfuwulei-time-display"></td>
+            </tr>
+            <tr>
+                <td><a href="#index" class="back-link">返回目录</a></td>
+            </tr>
+        </table>
+        <h1>移动设备云服务类</h1>
+        <table>
+            <tr>
+                <th>名称</th>
+                <th>链接</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>华为云空间</td>
+                <td>https://cloud.huawei.com/</td>
+                <td><button onclick="window.open('https://cloud.huawei.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>vivo云服务</td>
+                <td>https://yun.vivo.com.cn/welcome</td>
+                <td><button onclick="window.open('https://yun.vivo.com.cn/welcome', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>OPPO云服务</td>
+                <td>https://cloud.oppo.com/login.html</td>
+                <td><button onclick="window.open('https://cloud.oppo.com/login.html', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>小米云服务</td>
+                <td>https://i.mi.com/</td>
+                <td><button onclick="window.open('https://i.mi.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>管理你的 Apple 账户</td>
+                <td>https://account.apple.com/</td>
+                <td><button onclick="window.open('https://account.apple.com/', '_blank')">访问</button></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><a href="#index" class="back-link">返回目录</a></td>
+            </tr>
+        </table>
+        <!-- 免责声明 -->
+        <div class="disclaimer">
+            <p><strong>免责声明：</strong>本网站所提供的信息仅供参考。我们尽力确保内容的准确性，但不保证所有信息完全无误。用户因依赖本网站信息而采取的任何行动，风险自负。本网站不对由此产生的任何直接或间接损失承担责任。</p>
+            <div class="version-info">
+                <span class="version-number"></span>
+                <span class="version-date"></span>
+                <span class="version-author"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 实用工具类页面 模块 -->
+    <div id="shiyonggongjulei" class="page">
+        <table>
+            <tr>
+                <td colspan="3" class="time-cell" id="shiyonggongjulei-time-display"></td>
+            </tr>
+            <tr>
+                <td><a href="#index" class="back-link">返回目录</a></td>
+            </tr>
+        </table>
+        <h1>实用工具类</h1>
+        <table>
+            <tr>
+                <th>名称</th>
+                <th>链接</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>扫描全能王</td>
+                <td>https://www.camscanner.com/login</td>
+                <td><button onclick="window.open('https://www.camscanner.com/login', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>DeepSeek</td>
+                <td>https://www.deepseek.com/</td>
+                <td><button onclick="window.open('https://www.deepseek.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>豆包</td>
+                <td>https://www.doubao.com/</td>
+                <td><button onclick="window.open('https://www.doubao.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>豆包</td>
+                <td>https://yuanbao.tencent.com/</td>
+                <td><button onclick="window.open('https://yuanbao.tencent.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>文件转换器</td>
+                <td>https://convert.io/cn/</td>
+                <td><button onclick="window.open('https://convert.io/cn/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>时光邮局</td>
+                <td>https://www.hi2future.com/</td>
+                <td><button onclick="window.open('https://www.hi2future.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>自定义打印纸生成器</td>
+                <td>https://paperme.toolooz.com/</td>
+                <td><button onclick="window.open('https://paperme.toolooz.com/', '_blank')">访问</button></td>
+            </tr>
+            <tr>
+                <td>免费在线小游戏</td>
+                <td>https://poki.com/zh</td>
+                <td><button onclick="window.open('https://poki.com/zh', '_blank')">访问</button></td>
+            </tr>
+            
+        </table>
+        <table>
+            <tr>
+                <td><a href="#index" class="back-link">返回目录</a></td>
+            </tr>
+        </table>
+        <!-- 免责声明 -->
+        <div class="disclaimer">
+            <p><strong>免责声明：</strong>本网站所提供的信息仅供参考。我们尽力确保内容的准确性，但不保证所有信息完全无误。用户因依赖本网站信息而采取的任何行动，风险自负。本网站不对由此产生的任何直接或间接损失承担责任。</p>
+            <div class="version-info">
+                <span class="version-number"></span>
+                <span class="version-date"></span>
+                <span class="version-author"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

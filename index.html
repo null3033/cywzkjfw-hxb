@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>节日倒计时</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>节日倒计时 <span class="sync-status" id="sync-status"></span></h1>
+        
+        <div class="last-updated" id="last-updated"></div>
+        <div class="data-source" id="data-source">
+            <p>说明：1、此日历倒计时整理匆忙，如有不对的地方请告诉开发者进行修改。</p>
+            <p>2、下次更新时间2025年12月31日</p>
+        </div>
+        <div class="filter-controls">
+            <div class="filter-title">筛选节日类型：</div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="official">法定假日</button>
+                <button class="filter-btn" data-filter="lunar">传统节日</button>
+                <button class="filter-btn" data-filter="solar-term">二十四节气</button>
+                <button class="filter-btn" data-filter="seasonal">时令节气</button>
+                <button class="filter-btn" data-filter="memorial">纪念日</button>
+                <button class="filter-btn" data-filter="professional">行业性节日</button>
+            </div>
+        </div>
+        
+        <div class="countdown-container" id="countdown-container">
+            <!-- 倒计时卡片将通过JavaScript动态生成 -->
+        </div>
+        
+        <div class="data-source" id="data-source">
+            数据来源：手机日历统计
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

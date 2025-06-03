@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020级2班</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <style>
+        body {
+            user-select: none; /* 禁止文本选中 */
+            -webkit-user-select: none; /* Safari/Chrome */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE/Edge */
+        }
+    </style>
+    <header>
+        <div class="container">
+            <h1>2020级2班</h1>
+            <p>始于：2020年9月</p>
+            <p>终于：2023年6月</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="#about"><i class="fas fa-users"></i> 班级介绍</a></li>
+                <li><a href="#photos"><i class="fas fa-camera"></i> 班级相册</a></li>
+                <li><a href="#notice"><i class="fas fa-bullhorn"></i> 通知公告</a></li>
+                <li><a href="#calendar"><i class="fas fa-calendar-alt"></i> 班级日历</a></li>
+                <li><a href="#message"><i class="fas fa-comments"></i> 留言板</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="home" class="active-section">
+            <h2>欢迎来到2020级2班的网站</h2>
+            <div class="welcome-content">
+                <img src="https://ss-mpvolc.meipian.me/users/172816394/d8c2f754b8d5762aea7df38c23dc2f80__jpg.heic~tplv-s1ctq42ewb-s2-cC-q:750:0:0:0:q80.webp" alt="班级合影" class="class-photo">
+                <div class="welcome-text">
+                    <p>这里是2020级2班的网站。</p>
+                    <p>在这里你可以查看班级最新动态、活动照片，以及与同学们交流。</p>
+                    <p>让我们一起创造美好的班级回忆！</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>班级介绍</h2>
+            <div class="class-info">
+                <div class="teacher-card">
+                   <h2>任课老师</h2> 
+                   <ul>
+                        <li><strong>班主任：</strong>陈老师</li>
+                        <li><strong>语文：</strong>陈老师</li>
+                        <li><strong>数学：</strong>马老师</li>
+                        <li><strong>英语：</strong>李老师</li>
+                        <li><strong>物理：</strong>夏老师</li>
+                        <li><strong>化学：</strong>李老师</li>
+                        <li><strong>生物：</strong>李老师</li>
+                        <li><strong>政治：</strong>苏老师</li>
+                        <li><strong>历史：</strong>姜老师</li>
+                        <li><strong>地理：</strong>沈老师</li>
+                        <li><strong>美术：</strong>桑老师</li>
+                        <li><strong>体育：</strong>刘老师</li>
+                    </ul>
+                   
+                </div>
+                <div class="class-stats">
+                    <h3>班级概况</h3>
+                    <ul>
+                        <li><strong>班级人数：</strong>51人</li>
+                        <li><strong>男生：</strong>25人</li>
+                        <li><strong>女生：</strong>26人</li>
+                        <li><strong>始于：</strong>2020年9月</li>
+                        <li><strong>终于：</strong>2023年6月</li>
+                        <li><strong>誓词：</strong>【破釜沉舟搏他个日出日落背水一战拼他个无怨无悔 同学们请举起你的右手我们庄严宣誓】天道酬勤，厚积薄发，背水一战，乘风破浪，百日积淀，百日辉煌，摒弃一切杂念，必能百炼成钢，永信心铸就未来，用汗水浇灌成长，用分数赴一场青春的疯狂，用百天留一股胜利的芳香，我能行！我真棒！凝聚全部力量，让青春绽放，让梦想发光!</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="class-motto">
+                <h3>班级格言</h3>
+                <blockquote>"不积跬步，无以至千里；不积小流，无以成江海。"</blockquote>
+            </div>
+            <h3>班级成员</h3>
+            <div class="student-list" id="student-list"></div>
+        </section>
+
+        <section id="photos">
+            <h2>班级相册</h2>
+            <div class="photo-gallery">
+                <div class="gallery-item">
+                    <img src="https://ss-mpvolc.meipian.me/users/172816394/d8c2f754b8d5762aea7df38c23dc2f80__jpg.heic~tplv-s1ctq42ewb-s2-cC-q:750:0:0:0:q80.webp" alt="毕业照">
+                    <p>毕业照</p>
+                </div>
+                <div class="gallery-item">
+                    <a href="https://ss-mpvolc.meipian.me/users/172816394/d8c2f754b8d5762aea7df38c23dc2f80__jpg.heic~tplv-s1ctq42ewb-s2-cC-q:750:0:0:0:q80.webp" 
+                       class="gallery-link" 
+                       style="display: block; text-decoration: none; cursor: pointer;"
+                       target="_blank" 
+                       rel="noopener noreferrer"> <!-- 推荐添加，增强安全性 -->
+                        <img src="https://ss-mpvolc.meipian.me/users/172816394/d8c2f754b8d5762aea7df38c23dc2f80__jpg.heic~tplv-s1ctq42ewb-s2-cC-q:750:0:0:0:q80.webp" 
+                             alt="毕业照-大图" 
+                             style="display: block; width: 100%; pointer-events: none;">
+                        <p style="margin: 0; text-align: center;">毕业照-大图</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="https://www.meipian.cn/4svjrehs?first_share_to=copy_link&share_depth=1&first_share_uid=172816394" 
+                       class="gallery-link" 
+                       style="display: block; text-decoration: none; cursor: pointer;"
+                       target="_blank" 
+                       rel="noopener noreferrer"> <!-- 推荐添加，增强安全性 -->
+                        <img src="photos/mpwmbyl.jpg" 
+                             alt="美篇-我们毕业了" 
+                             style="display: block; width: 100%; pointer-events: none;">
+                        <p style="margin: 0; text-align: center;">美篇-我们毕业了</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="https://yaky4gvmfa4.feishu.cn/wiki/NFl6wesI7iP7skk8gEWc2yofnYd" 
+                       class="gallery-link" 
+                       style="display: block; text-decoration: none; cursor: pointer;"
+                       target="_blank" 
+                       rel="noopener noreferrer"> <!-- 推荐添加，增强安全性 -->
+                        <img src="photos/fsxdzxxx.jpg" 
+                             alt="xdzxxx2020级2班回忆" 
+                             style="display: block; width: 100%; pointer-events: none;">
+                        <p style="margin: 0; text-align: center;">xdzxxx2020级2班回忆</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="https://md-mpvolc.meipian.me/users/172816394/87525a1cece5b0a6cf4999e7b23627d7.mp4" 
+                       class="gallery-link" 
+                       style="display: block; text-decoration: none; cursor: pointer;"
+                       target="_blank" 
+                       rel="noopener noreferrer"> <!-- 推荐添加，增强安全性 -->
+                        <img src="photos/xdzxxx2020j2bbjsp.png" 
+                             alt="xdzxxx2020级2班回忆" 
+                             style="display: block; width: 100%; pointer-events: none;">
+                        <p style="margin: 0; text-align: center;">xdzxxx2020级2班回忆</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="https://mp.weixin.qq.com/s/B07tHYW2HLHADy4B5aN3Hw" 
+                       class="gallery-link" 
+                       style="display: block; text-decoration: none; cursor: pointer;"
+                       target="_blank" 
+                       rel="noopener noreferrer"> <!-- 推荐添加，增强安全性 -->
+                        <img src="photos/xdzxxx2020j2bhxd001b.png" 
+                             alt="xdzxxx2020级2班后续第001部" 
+                             style="display: block; width: 100%; pointer-events: none;">
+                        <p style="margin: 0; text-align: center;">xdzxxx2020级2班后续第001部</p>
+                    </a>
+                </div>
+            </div>
+            <button id="load-more-photos" class="btn">到底了</button>
+        </section>
+
+        <section id="notice">
+            <h2>通知公告</h2>
+            <div class="notice-board">
+                <div class="notice-item">
+                    <h3>标题</h3>
+                    <p class="notice-date">日期</p>
+                    <p>内容</p>
+                </div>
+            </div>
+            <div class="notice-board">
+                <div class="notice-item">
+                    <h3>2020级2班毕业</h3>
+                    <p class="notice-date">2023-06-21</p>
+                    <p>2020级2班毕业</p>
+                </div>
+            </div>
+            <div class="notice-board">
+                <div class="notice-item">
+                    <h3>新生入学</h3>
+                    <p class="notice-date">2020-09-01</p>
+                    <p>新生入学</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <h2>班级日历</h2>
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                    <h3 id="current-month">2020年09月</h3>
+                    <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="calendar-grid" id="calendar-grid">
+                    <!-- JS动态生成 -->
+                </div>
+                <div class="calendar-events">
+                    <h3>本月重要事件</h3>
+                    <ul id="events-list">
+                        <li data-date="2020-09-01">2020-09-01：新生入学</li>
+                        <li data-date="2023-06-21">2023-06-21：2020级2班毕业</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="message">
+            <h2>留言板</h2>
+            <div class="message-form">
+                <form id="message-form">
+                    <div class="form-group">
+                        <label for="name">姓名：</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">留言内容：</label>
+                        <textarea id="content" name="content" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">提交留言(不会储存)</button>
+                </form>
+            </div>
+            <div class="message-list">
+                <h3>最新留言</h3>
+                <div class="message-item">
+                    <p class="message-author">x <span class="message-time">x</span></p>
+                    <p class="message-content">x</p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- 相册图片查看模态框 -->
+    <div class="photo-modal modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" src="" alt="">
+            <p class="modal-caption"></p>
+        </div>
+    </div>
+
+    <!-- 微信二维码弹窗 -->
+    <div class="weixin-modal modal">
+        <div class="modal-content">
+            <p class="modal-caption">扫描关注微信公众号</p>
+            <span class="close-modal">&times;</span>
+            <img alt="微信公众号二维码" src="images/weixin-qr.jpg"  class="modal-image">
+        </div>
+    </div>
+
+    <!-- QQ群弹窗 -->
+    <div class="qq-modal modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fab fa-qq" style="color: #12c2e9; margin-right: 10px;"></i>
+                <h3 class="modal-title">微信公众号</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img src="images/weixin-qr.jpg" alt="QQ群二维码" class="modal-image">
+                <p class="modal-tip">扫描二维码关注公众号</p>
+            </div>
+            <div class="modal-footer">
+                <p>群号:  (备用)</p>
+            </div>
+        </div>
+    </div>
+    <!-- 邮箱弹窗 -->
+    <div class="email-modal modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="email-info">
+                <h3>班级邮箱</h3>
+                <p><i class="fas fa-envelope">:</i> x@example.com</p>
+                <p>有任何问题欢迎邮件联系我们</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2020级2班 </p>
+            <div class="social-links">
+                <a href="#" class="weixin-link"><i class="fab fa-weixin"></i></a>
+                <a href="#" class="qq-link"><i class="fab fa-qq"></i></a>
+                <a href="#" class="email-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

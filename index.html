@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站公告</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="announcement-container">
+        <div class="header">
+            <h1><i class="fas fa-bullhorn"></i>kjfw002\kjfw002的公告</h1>
+            <div class="time-display" id="current-time"></div> <!-- 新增的时间显示 -->
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="搜索公告...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        
+        <div class="filter-tabs">
+            <button class="tab-btn active" data-filter="all">全部公告</button>
+            <button class="tab-btn" data-filter="wzgg">网站公告</button>
+            <button class="tab-btn" data-filter="zytz">重要通知</button>
+            <button class="tab-btn" data-filter="event"> </button>
+        </div>
+        
+        <div id="announcement-list" class="announcement-list">
+            <!-- 公告内容将由JavaScript动态生成 -->
+        </div>
+        
+        <div class="pagination">
+            <button id="prev-page" disabled><i class="fas fa-chevron-left"></i></button>
+            <span id="page-info">1/1</span>
+            <button id="next-page" disabled><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="footer">
+            <p>© kjfw002\kjfw002的公告 版权所有</p>
+            <div class="social-links">
+                <a href="#" class="social-icon" data-type="wechat"><i class="fab fa-weixin"></i></a>
+                <a href="#" class="social-icon" data-type="qq"><i class="fab fa-qq"></i></a>
+                <a href="#" class="social-icon" data-type="email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 弹窗结构 -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modal-title">联系方式</h3>
+            <div id="modal-body">
+                <p id="contact-info"></p>
+                <div id="contact-qrcode-container">
+                    <img id="contact-qrcode" src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
